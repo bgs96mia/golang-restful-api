@@ -1,0 +1,47 @@
+### Create Author
+POST http://localhost:8080/api/authors
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Agusss Setiawan",
+  "gender": "male",
+  "email": "agusss@gmail.com",
+  "age": 21
+}
+### Get Authors
+GET http://localhost:8080/api/authors
+Accept: application/json
+
+### Get Author By ID
+GET http://localhost:8080/api/authors/7
+Accept: application/json
+
+### Update Author
+PATCH http://localhost:8080/api/authors/4
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Bagas Saputra",
+  "email": "bagas@gmail.com"
+}
+
+### Delete Author
+DELETE http://localhost:8080/api/authors/00000000-0000-0000-0000-000000000000
+Accept: application/json
+
+### Create Book
+POST http://localhost:8080/api/books
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "Arya Patih",
+  "author_id": "3759cbe6-7416-4fa1-adde-d3ee31933192",
+  "description": "Novel Inspirasi"
+}
+
+### Get Books
+GET http://localhost:8080/api/books
+Accept: application/json
